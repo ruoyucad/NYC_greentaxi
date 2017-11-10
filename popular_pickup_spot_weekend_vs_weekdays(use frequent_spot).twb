@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='frequent_spot' inline='true' name='federated.1cupubx0z9ze651guon4n1f8tydo' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='frequent_spot' name='textscan.0z3tukf158l30y100wkb605j68g0'>
+            <connection class='textscan' directory='C:/Users/Angelo/Documents/GALE_interview' filename='frequent_spot.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0z3tukf158l30y100wkb605j68g0' name='frequent_spot.csv' table='[frequent_spot#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Weekday' ordinal='1' />
+            <column datatype='integer' name='zipcode' ordinal='2' />
+            <column datatype='string' name='address' ordinal='3' />
+            <column datatype='integer' name='Taxi_Demand' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weekday]</local-name>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias>Weekday</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Taxi_Demand</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Taxi_Demand]</local-name>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias>Taxi_Demand</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[frequent_spot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Taxi Demand' datatype='integer' name='[Taxi_Demand]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.447103' measure-ordering='alphabetic' measure-percentage='0.552897' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='FrequentSpot_weekdays'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>By zipcodes&#10;&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='frequent_spot' name='federated.1cupubx0z9ze651guon4n1f8tydo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cupubx0z9ze651guon4n1f8tydo'>
+            <column caption='Taxi Demand' datatype='integer' name='[Taxi_Demand]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekday]' role='measure' type='quantitative' />
+            <column-instance column='[Taxi_Demand]' derivation='Count' name='[cnt:Taxi_Demand:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>4</max>
+          </filter>
+          <slices>
+            <column>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' />
+              <color column='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' />
+              <text column='[federated.1cupubx0z9ze651guon4n1f8tydo].[none:zipcode:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='FrequentSpot_weekends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>By zipcode&#10;&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='frequent_spot' name='federated.1cupubx0z9ze651guon4n1f8tydo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cupubx0z9ze651guon4n1f8tydo'>
+            <column caption='Taxi Demand' datatype='integer' name='[Taxi_Demand]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekday]' role='measure' type='quantitative' />
+            <column-instance column='[Taxi_Demand]' derivation='Count' name='[cnt:Taxi_Demand:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]' included-values='in-range'>
+            <min>5</min>
+            <max>6</max>
+          </filter>
+          <slices>
+            <column>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2e3db</color>
+                <color>#f3d6c5</color>
+                <color>#f5c8af</color>
+                <color>#f6bb98</color>
+                <color>#f8ad81</color>
+                <color>#f99f6a</color>
+                <color>#fa9053</color>
+                <color>#fc823b</color>
+                <color>#fd7324</color>
+                <color>#ff650c</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' />
+              <color column='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' />
+              <text column='[federated.1cupubx0z9ze651guon4n1f8tydo].[none:zipcode:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='FrequentSpot_weekdays'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]</field>
+            <field>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:address:nk]</field>
+            <field>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:zipcode:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='FrequentSpot_weekends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cupubx0z9ze651guon4n1f8tydo].[cnt:Taxi_Demand:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:Weekday:qk]</field>
+            <field>[federated.1cupubx0z9ze651guon4n1f8tydo].[none:zipcode:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='FrequentSpot_weekdays' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='FrequentSpot_weekends' width='192'>
+      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
+      4CBRib9q2gAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
