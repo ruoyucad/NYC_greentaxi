@@ -1,6 +1,7 @@
 # NYC_greentaxi
 This project is aimd to analyse NYC green taxi data and find possible insights within
 The goal is to find the relationship of the taxi demand with attributes like lengh of the trip, pickup location etc. 
+![Alt text](https://github.com/ruoyucad/NYC_greentaxi/blob/master/weekends.PNG?raw=true "popular location on Weekend")
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 ```
@@ -37,6 +38,7 @@ because Geopy will block the ip if too many requests occur.(Generating addresses
  python3 feature_engineering_taxi_demaind.py
 ```
 zipcodes_coords.csv will be generated for modeling and prediction
+![Alt text](https://github.com/ruoyucad/NYC_greentaxi/blob/master/weekdays.PNG?raw=true "popular location on Weekdays")
 # Modeling & predict 
 After feature engineering, three more features will be generated 'zipcode', 'address', 'Demand'
 'Demand' varibale will be used as dependent variable 
